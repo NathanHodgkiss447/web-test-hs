@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <div class="exercise-header">
+          <h2>Exercise 1 - Testimonial Block</h2>
+        </div>
+
+        <div>
+          <div>
+            <div>
+              <p>
+                Gingerbread tart cupcake cake muffin cookie liquorice tiramisu.
+                Toffee cupcake cake cake croissant icing carrot cake cookie.
+                Dessert chocolate bar apple pie sesame snaps liquorice carrot
+                cake cookie danish.
+              </p>
+              <span>Indiana Jones, Archaeologist</span>
+            </div>
+            <a>Tell Me More</a>
+          </div>
+        </div>
+
+        <div class="exercise-header">
+          <h2>Exercise 2 - Filterable Content</h2>
+        </div>
+
+        <div>[Exercise 2 Here]</div>
+      </body>
     </div>
   );
 }

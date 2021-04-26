@@ -84,7 +84,7 @@ body > div:nth-child(2) > div {
     font-size: 50px;
     left: 50.8%;
     line-height: 50px;
-    margin-left: -410px;
+    margin-left: -409px;
     position: absolute;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
@@ -155,3 +155,62 @@ a {
 }
 
 /* Exercise 1 End */
+
+/* Exercise 2 Start */
+.movie-container {
+  border: 1px solid $border-colour;
+  margin: 0px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @media (max-width: $phone) {
+    justify-content: center;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+  padding: 0px 20px;
+  border-top: 1px solid $border-colour;
+  border-left: 1px solid $border-colour;
+  border-right: 1px solid $border-colour;
+}
+
+.clearFilter {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+  @media (max-width: $phone) {
+    justify-content: center;
+  }
+}
+
+.clear-btn {
+  font-family: "Montserrat" !important;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #00a3e1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.radio-label {
+  font-weight: bold;
+}
+
+#movieLabel {
+  margin-right: 10px;
+}
+/* Exercise 2 End */

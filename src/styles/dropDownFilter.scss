@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400");
+@import "./variables.scss";
+.menu-container {
+  position: relative;
+  padding-right: 20px;
+}
+.menu {
+  background: #ffffff;
+  position: absolute;
+  top: 60px;
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    border-bottom: 1px solid #dddddd;
+    a {
+      text-decoration: none;
+      color: #333333;
+      padding: 15px 20px;
+      display: block;
+    }
+  }
+  &-arrow {
+    height: 30px;
+    width: 30px;
+  }
+}
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.menu-trigger {
+  background: #f6f7f6;
+  font-family: "Montserrat";
+  cursor: pointer;
+  display: flex;
+  border-bottom: 3px solid $border-colour !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  @media (max-width: $phone-lg) {
+    padding: 10px 15px;
+  }
+  &:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  }
+  span {
+    font-weight: 700;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @media (max-width: $phone-lg) {
+    flex-direction: column;
+  }
+  &-menu {
+    display: flex;
+    @media (max-width: $phone-lg) {
+      justify-content: center;
+      margin-bottom: 15px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.search {
+  @media (max-width: $phone-lg) {
+    text-align: center;
+  }
+}
+
+.menu-button {
+  margin-top: 0px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.yearFilter {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(134, 133, 134);
+  padding: 15px 20px;
+  display: block;
+}

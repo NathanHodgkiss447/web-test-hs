@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400");
+@import "./styles//variables.scss";
+
+//Variables
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Montserrat", sans-serif;
+}
+
+.exercise-header {
+  padding: 1rem 0;
+  margin: 2rem 0;
+  text-align: center;
+  color: #fff;
+  background-color: #00a4bd;
+}
+
+/* Exercise 1 Start */
+
+body > div:nth-child(2) > div {
+  display: flex;
+  margin: 50px 0px 50px 0px;
+  @media (max-width: $tablet-sm) {
+    flex-direction: column;
+  }
+  @media (max-width: $phone-lg) {
+    flex-direction: column;
+  }
+
+  div {
+    width: 500px;
+    margin-left: 35%;
+    border-left: 2px solid rgb(255, 108, 0);
+    @media (max-width: $phone-lg) {
+      margin-left: 21%;
+    }
+    @media (max-width: $phone) {
+      margin-left: 8%;
+    }
+  }
+
+  div::before {
+    content: open-quote;
+    background: none repeat scroll 0 0 rgba(249, 105, 14, 1);
+    border-radius: 50% 50% 50% 50%;
+    color: rgba(255, 255, 255, 255);
+    font-family: "icons";
+    font-size: 50px;
+    left: 50.25%;
+    line-height: 50px;
+    margin-left: -406px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+    top: 145px;
+    height: 35px;
+    width: 35px;
+    @media (max-width: $desktop-lg) {
+      margin-left: -309px;
+    }
+    @media (max-width: $tablet) {
+      margin-left: -212px;
+    }
+    @media (max-width: $tablet-sm) {
+      margin-left: -173px;
+      font-size: 40px;
+    }
+    @media (max-width: $phone-lg) {
+      margin-left: -240px;
+    }
+    @media (max-width: $phone) {
+      margin-left: -189px;
+      font-size: 35px;
+    }
+  }
+  div::after {
+    content: ".";
+    background: none repeat scroll 0 0 rgba(249, 105, 14, 1);
+    border-radius: 50% 50% 50% 50%;
+    color: rgba(255, 255, 255, 255);
+    font-family: "icons";
+    font-size: 50px;
+    left: 50.8%;
+    line-height: 50px;
+    margin-left: -409px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+    top: 323px;
+    height: 15px;
+    width: 15px;
+    @media (max-width: $desktop-lg) {
+      margin-left: -309px;
+    }
+    @media (max-width: $tablet) {
+      margin-left: -208px;
+    }
+    @media (max-width: $tablet-sm) {
+      margin-left: -168px;
+    }
+    @media (max-width: $phone-lg) {
+      margin-left: -235px;
+      top: 320px;
+    }
+    @media (max-width: $phone) {
+      margin-left: -181px;
+      top: 330px;
+      height: 12px;
+      width: 12px;
+    }
+  }
+}
+
+p {
+  font-size: 18px;
+  color: #64615b;
+  font-weight: 200;
+  margin: 0px 50px 20px 50px;
+  font-family: "Montserrat";
+  @media (max-width: $phone) {
+    margin: 0px 180px 20px 20px;
+    font-size: 15px;
+  }
+}
+span {
+  margin: 0px 50px 20px 50px;
+  font-weight: bold;
+  color: #64615b;
+}
+a {
+  background-color: rgb(0, 163, 225);
+  color: white;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 30px;
+  height: 20px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  @media (max-width: $tablet-sm) {
+    margin: 20px 39% 0px 39%;
+    text-align: center;
+  }
+  @media (max-width: $phone-lg) {
+    text-align: center;
+  }
+  @media (max-width: $phone) {
+    margin-left: 70px;
+    margin-right: 129px;
+  }
+}
+
+/* Exercise 1 End */
+
+/* Exercise 2 Start */
+.movie-container {
+  border: 1px solid $border-colour;
+  margin: 0px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @media (max-width: $phone) {
+    justify-content: center;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+  padding: 0px 20px;
+  border-top: 1px solid $border-colour;
+  border-left: 1px solid $border-colour;
+  border-right: 1px solid $border-colour;
+}
+
+.clearFilter {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+  @media (max-width: $phone) {
+    justify-content: center;
+  }
+}
+
+.clear-btn {
+  font-family: "Montserrat" !important;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #00a3e1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.radio-label {
+  font-weight: bold;
+}
+
+#movieLabel {
+  margin-right: 10px;
+}
+/* Exercise 2 End */
